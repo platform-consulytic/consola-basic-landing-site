@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Consola | Power BI- en Microsoft Fabric-portaal in Azure</title>
+  <meta name="description" content="Beheer Power BI en Microsoft Fabric vanuit één centrale omgeving. Deel rapportages, beheer toegang, monitor Fabric en beheer capaciteit met Consola.">
+
+  <meta property="og:title" content="Consola | Power BI en Microsoft Fabric in één centrale omgeving">
+  <meta property="og:description" content="Beheer Power BI-rapportages, gebruikerstoegang, monitoring en Fabric-capaciteit vanuit één centrale omgeving.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Consola",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Microsoft Azure",
+    "description":"Consola is een beheer- en toegangslaag bovenop Power BI, Microsoft Fabric en Azure voor rapportages, gebruikerstoegang, monitoring en capaciteitsbeheer.",
+    "offers":[
+      {"@type":"Offer","name":"Starter","price":"199","priceCurrency":"EUR"},
+      {"@type":"Offer","name":"Basic","price":"399","priceCurrency":"EUR"},
+      {"@type":"Offer","name":"Pro","price":"699","priceCurrency":"EUR"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Consola-home">
+        <img src="assets/consola-logo.png" alt="Consola">
+      </a>
+
+      <div class="nav-actions">
+        <a class="button button-secondary nav-marketplace"
+           href="https://portal.azure.com/#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/consulytic.consola-app/selectionMode~/false/resourceGroupId//resourceGroupLocation//dontDiscardJourney~/false/selectedMenuId/home/launchingContext~/%7B%22galleryItemId%22%3A%22consulytic.consola-appconsola%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%2C%22VirtualizedTileDetails%22%5D%2C%22menuItemId%22%3A%22home%22%2C%22subMenuItemId%22%3A%22Search%20results%22%2C%22telemetryId%22%3A%22fd4078c5-c17f-4c12-8302-ecb9b78a7747%22%7D/searchTelemetryId/6b536dd2-1865-453a-b598-d9ec07864c0c"
+           target="_blank" rel="noopener">
+          <span data-i18n="common.marketplaceView">Bekijk in Azure Marketplace</span>
+        </a>
+        <a class="button button-primary nav-demo" href="mailto:sebastiaan@consulytic.com?subject=Demo-aanvraag%20Consola&body=Hallo%20Sebastiaan%2C%0A%0AIk%20wil%20graag%20een%20demo%20van%20Consola%20aanvragen%20en%20meer%20weten%20over%20de%20mogelijkheden%20voor%20onze%20organisatie.%0A%0ABedrijf%3A%0AToepassing%20%2F%20use%20case%3A%0AGeschat%20aantal%20gebruikers%3A%0A%0AAlvast%20bedankt." data-i18n="nav.demo">Demo aanvragen</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu openen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Hoofdnavigatie">
+      <a href="#why-consola" data-i18n="nav.why">Waarom Consola</a>
+      <a href="#platform" data-i18n="nav.platform">Platform</a>
+      <a href="#security" data-i18n="nav.security">Azure &amp; Beveiliging</a>
+      <a href="#pricing" data-i18n="nav.pricing">Prijzen</a>
+      <a href="#faq" data-i18n="nav.faq">Veelgestelde vragen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span data-i18n="hero.eyebrowPrefix">POWER BI EN FABRIC,</span>
+            <span class="eyebrow-highlight" data-i18n="hero.eyebrowHighlight">ÉÉN CENTRALE OMGEVING</span>
+          </div>
+          <h1><span data-i18n="hero.titleMain">Beheer Power BI en Microsoft Fabric</span> <span class="headline-accent" data-i18n="hero.titleAccent">vanuit één portaal.</span></h1>
+          <p class="hero-lead" data-i18n="hero.description">
+            Je rapportages en data blijven in je Microsoft-omgeving. Consola werkt als beheer- en toegangslaag bovenop Power BI, Microsoft Fabric en Azure.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary button-large"
+               href="https://portal.azure.com/#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/consulytic.consola-app/selectionMode~/false/resourceGroupId//resourceGroupLocation//dontDiscardJourney~/false/selectedMenuId/home/launchingContext~/%7B%22galleryItemId%22%3A%22consulytic.consola-appconsola%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%2C%22VirtualizedTileDetails%22%5D%2C%22menuItemId%22%3A%22home%22%2C%22subMenuItemId%22%3A%22Search%20results%22%2C%22telemetryId%22%3A%22fd4078c5-c17f-4c12-8302-ecb9b78a7747%22%7D/searchTelemetryId/6b536dd2-1865-453a-b598-d9ec07864c0c"
+               target="_blank" rel="noopener">
+              <span data-i18n="common.marketplaceView">Bekijk in Azure Marketplace</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary button-large" href="#demo" data-i18n="nav.demo">Demo aanvragen</a>
+          </div>
+
+          <p class="micro-proof" data-i18n="hero.proof">
+            Deel Power BI-rapportages ook met externe gebruikers, zonder voor iedere gebruiker een aparte Power BI-licentie nodig te hebben.
+          </p>
+
+          <div class="trust-strip" aria-label="Microsoft-technologieën">
+            <span data-i18n="hero.trustAzure">Data blijft in jouw omgeving</span>
+            <span>Microsoft Entra ID</span>
+            <span>Power BI Embedded</span>
+            <span>Microsoft Fabric</span>
+          </div>
+        </div>
+
+        <div class="hero-product reveal">
+          <div class="product-frame">
+            <div class="frame-top">
+              <div class="traffic-lights"><i></i><i></i><i></i></div>
+              <div class="frame-address">consulytic.nl</div>
+            </div>
+            <div class="hero-image-wrap">
+              <img class="product-screenshot" src="assets/example-homepage.png" alt="Consola analytics-portaal" width="1920" height="1080">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section" id="why-consola">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="why.eyebrow">POWER BI-RAPPORTAGES DELEN</div>
+          <h2 data-i18n="why.title">Power BI en Fabric werken goed. Het beheer wordt al snel onoverzichtelijk.</h2>
+          <p>
+            <span data-i18n="why.descriptionMain">Toegang, Power BI-rapportages en Fabric-beheer zitten vaak verspreid over verschillende Microsoft-omgevingen. Consola brengt dit samen</span>
+            <span class="inline-highlight" data-i18n="why.descriptionHighlight">in één centrale beheeromgeving.</span>
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="comparison-card before reveal">
+            <div class="comparison-label" data-i18n="why.withoutLabel">Zonder Consola</div>
+            <h3 data-i18n="why.withoutTitle">Beheer op meerdere plekken. Meer handmatig werk. Minder overzicht.</h3>
+            <ul class="pain-list">
+              <li data-i18n="why.without1">Voor externe gebruikers is vaak een aparte Power BI-licentie nodig.</li>
+              <li data-i18n="why.without2">Toegang tot Power BI-rapportages wordt op meerdere plekken beheerd.</li>
+              <li data-i18n="why.without3">Monitoring en Fabric-beheer gebeuren op verschillende plekken.</li>
+              <li data-i18n="why.without4">Beheer kost meer tijd doordat je tussen verschillende omgevingen moet wisselen.</li>
+            </ul>
+          </article>
+
+          <div class="comparison-arrow" aria-hidden="true"><span>→</span></div>
+
+          <article class="comparison-card after reveal">
+            <div class="comparison-label" data-i18n="why.withLabel">Met Consola</div>
+            <h3 data-i18n="why.withTitle">Eén centrale beheeromgeving bovenop je bestaande Microsoft-omgeving.</h3>
+            <ul class="benefit-list">
+              <li data-i18n="why.with1">Externe gebruikers kunnen Power BI-rapportages bekijken zonder een aparte Power BI-licentie.</li>
+              <li data-i18n="why.with2">Beheer toegang tot rapportages en modules vanuit één plek.</li>
+              <li data-i18n="why.with3">Bewaak workloads en beheer Fabric-capaciteit vanuit dezelfde omgeving.</li>
+              <li data-i18n="why.with4">Power BI, Microsoft Fabric en Azure blijven gewoon werken zoals je gewend bent.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-story" id="platform">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="platform.eyebrow">ZO WERKT CONSOLA</div>
+          <h2 data-i18n="platform.title">Gebruikers zien alleen wat voor hen bedoeld is. Beheerders regelen het centraal.</h2>
+          <p data-i18n="platform.description">
+            Consola controleert wie de gebruiker is en welke toegang die heeft. Daarna ziet de gebruiker alleen de juiste modules en Power BI-rapportages.
+          </p>
+        </div>
+
+        <div class="flow reveal" aria-label="Consola gebruikersflow">
+          <div class="flow-step"><span>01</span><strong data-i18n="platform.step1Title">Gebruiker meldt zich aan</strong><small data-i18n="platform.step1Text">Met Microsoft Entra ID</small></div>
+          <i>→</i>
+          <div class="flow-step"><span>02</span><strong data-i18n="platform.step2Title">Consola controleert de toegang</strong><small data-i18n="platform.step2Text">Op basis van gebruiker, groep en rechten</small></div>
+          <i>→</i>
+          <div class="flow-step"><span>03</span><strong data-i18n="platform.step3Title">Gebruiker ziet de juiste inhoud</strong><small data-i18n="platform.step3Text">Alleen toegestane rapportages</small></div>
+          <i>→</i>
+          <div class="flow-step"><span>04</span><strong data-i18n="platform.step4Title">Rapportage opent in Consola</strong><small data-i18n="platform.step4Text">De Power BI-rapportage wordt direct in het portaal weergegeven</small></div>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <div class="capability-icon"><img src="assets/report-logo.png" alt="" aria-hidden="true"></div>
+            <div>
+              <span class="capability-kicker" data-i18n="platform.cap1Label">01 · RAPPORTAGES &amp; TOEGANG</span>
+              <h3 data-i18n="platform.cap1Title">Bepaal wie welke rapportage ziet</h3>
+              <p data-i18n="platform.cap1Text">Koppel gebruikers aan groepen en bepaal welke rapportages zij zien. Pas waar nodig Power BI Row-Level Security toe.</p>
+            </div>
+          </article>
+
+          <article class="capability-card reveal">
+            <div class="capability-icon"><img src="assets/excel-logo.webp" alt="" aria-hidden="true"></div>
+            <div>
+              <span class="capability-kicker" data-i18n="platform.cap2Label">02 · GEGEVENSINVOER</span>
+              <h3 data-i18n="platform.cap2Title">Upload Excel-data veilig</h3>
+              <p data-i18n="platform.cap2Text">Gebruik vaste sjablonen en controles voordat data naar Microsoft Fabric gaat.</p>
+            </div>
+          </article>
+
+          <article class="capability-card reveal">
+            <div class="capability-icon"><img src="assets/monitor-logo.png" alt="" aria-hidden="true"></div>
+            <div>
+              <span class="capability-kicker" data-i18n="platform.cap3Label">03 · MONITORING</span>
+              <h3 data-i18n="platform.cap3Title">Zie Fabric-fouten op tijd</h3>
+              <p data-i18n="platform.cap3Text">Bewaak pipelines en notebooks op één plek en zie fouten voordat ze rapportages beïnvloeden.</p>
+            </div>
+          </article>
+
+          <article class="capability-card reveal">
+            <div class="capability-icon"><img src="assets/fabric-logo.svg" alt="" aria-hidden="true"></div>
+            <div>
+              <span class="capability-kicker" data-i18n="platform.cap4Label">04 · CAPACITEIT</span>
+              <h3 data-i18n="platform.cap4Title">Beheer Fabric-capaciteit slimmer</h3>
+              <p data-i18n="platform.cap4Text">Pauzeer, hervat, schaal en plan Fabric-capaciteit rechtstreeks vanuit Consola.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section governance-section">
+      <div class="container split-layout">
+        <div class="split-copy reveal">
+          <div class="eyebrow" data-i18n="access.eyebrow">GEBRUIKERSTOEGANG</div>
+          <h2 data-i18n="access.title">Bepaal vanaf één plek wie welke rapportages kan zien.</h2>
+          <p data-i18n="access.description">
+            Beheer gebruikers, groepen en toegang vanuit één plek. Pas waar nodig Power BI Row-Level Security toe.
+          </p>
+
+          <div class="hierarchy">
+            <span data-i18n="access.organizations">Organisaties</span><i>→</i><span data-i18n="access.groups">Groepen</span><i>→</i><span data-i18n="access.modules">Modules</span><i>→</i><span data-i18n="access.reports">Rapportages</span>
+          </div>
+
+          <ul class="feature-points">
+            <li data-i18n="access.point1">Nodig gebruikers uit via Microsoft Entra ID</li>
+            <li data-i18n="access.point2">Geef groepen toegang tot modules en rapportages</li>
+            <li data-i18n="access.point3">Pas Power BI Row-Level Security toe</li>
+            <li data-i18n="access.point4">Bekijk het portaal als een gebruiker om toegangsproblemen te controleren</li>
+          </ul>
+        </div>
+
+        <div class="screenshot-slot reveal">
+          <img class="product-screenshot" src="assets/access-governance.png" alt="Consola-interface voor gebruikerstoegang en rechtenbeheer" width="1920" height="1080">
+        </div>
+      </div>
+    </section>
+
+    <section class="section azure-section" id="security">
+      <div class="container azure-grid">
+        <div class="azure-copy reveal">
+          <div class="eyebrow light" data-i18n="azure.eyebrow">JOUW MICROSOFT-OMGEVING BLIJFT CENTRAAL</div>
+          <h2 data-i18n="azure.title">Consola werkt bovenop je bestaande Microsoft-omgeving.</h2>
+          <p data-i18n="azure.description">
+            Je rapportages en data blijven in je eigen Microsoft-omgeving. Consola verbindt Power BI, Microsoft Fabric en Microsoft Entra ID in één beheerlaag.
+          </p>
+
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-card-icon"><img src="assets/entra-logo.webp" alt="" aria-hidden="true"></div>
+              <strong>Microsoft Entra ID</strong>
+              <span data-i18n="azure.entraText">Aanmelden en toegang beheren</span>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card-icon"><img src="assets/report-logo.png" alt="" aria-hidden="true"></div>
+              <strong>Power BI</strong>
+              <span data-i18n="azure.powerBiText">Rapportages bekijken en delen</span>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card-icon"><img src="assets/fabric-logo.svg" alt="" aria-hidden="true"></div>
+              <strong>Microsoft Fabric</strong>
+              <span data-i18n="azure.fabricText">Data, monitoring en capaciteit beheren</span>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card-icon"><img src="assets/marketplace-logo.png" alt="" aria-hidden="true"></div>
+              <strong>Azure Marketplace</strong>
+              <span data-i18n="azure.marketplaceText">Implementeren en afnemen via Azure</span>
+            </div>
+          </div>
+
+          <p class="caveat" data-i18n="azure.caveat">
+            Je data en rapportages blijven binnen je bestaande Microsoft-omgeving.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="uploads.eyebrow">EXCEL-UPLOADS</div>
+          <h2 data-i18n="uploads.title">Upload Excel-data veilig naar Microsoft Fabric.</h2>
+          <p data-i18n="uploads.description">
+            Consola controleert het bestand voordat de gegevens naar Fabric worden geschreven. Zo voorkom je fouten en werk je altijd met de juiste structuur.
+          </p>
+        </div>
+
+        <div class="workflow-grid reveal">
+          <div class="workflow-step"><span>1</span><strong data-i18n="uploads.step1Title">Sjabloon downloaden</strong><small data-i18n="uploads.step1Text">Start met de juiste kolommen en indeling</small></div>
+          <div class="workflow-line"></div>
+          <div class="workflow-step"><span>2</span><strong data-i18n="uploads.step2Title">Bestand uploaden</strong><small data-i18n="uploads.step2Text">Upload het ingevulde Excel-bestand</small></div>
+          <div class="workflow-line"></div>
+          <div class="workflow-step"><span>3</span><strong data-i18n="uploads.step3Title">Gegevens controleren</strong><small data-i18n="uploads.step3Text">Consola controleert structuur, waarden en regels</small></div>
+          <div class="workflow-line"></div>
+          <div class="workflow-step"><span>4</span><strong data-i18n="uploads.step4Title">Opslaan in Fabric</strong><small data-i18n="uploads.step4Text">Goedgekeurde gegevens worden veilig opgeslagen</small></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section operations-section">
+      <div class="container split-layout reverse">
+        <div class="split-copy reveal">
+          <div class="eyebrow" data-i18n="capacity.eyebrow">FABRIC-CAPACITEIT</div>
+          <h2 data-i18n="capacity.title">Beheer Fabric-capaciteit vanuit één plek.</h2>
+          <p data-i18n="capacity.description">
+            Pauzeer, hervat, wijzig en plan Fabric-capaciteit rechtstreeks vanuit Consola. Zo beheer je capaciteit vanuit één centrale omgeving.
+          </p>
+          <ul class="feature-points">
+            <li data-i18n="capacity.point1">Pauzeer en hervat capaciteit</li>
+            <li data-i18n="capacity.point2">Wijzig de capaciteitsgrootte</li>
+            <li data-i18n="capacity.point3">Plan capaciteitswijzigingen</li>
+          </ul>
+        </div>
+
+        <div class="screenshot-slot dark-slot reveal">
+          <img class="product-screenshot" src="assets/capacity-management.png" alt="Consola-interface voor Microsoft Fabric-capaciteitsbeheer" width="1920" height="1080">
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <div class="eyebrow" data-i18n="pricing.eyebrow">PRIJZEN</div>
+          <h2 data-i18n="pricing.title">Kies een pakket dat past bij jouw organisatie.</h2>
+          <p data-i18n="pricing.description">Koop via Azure Marketplace. Elk pakket heeft duidelijke limieten voor gebruikers, modules, Fabric-capaciteit, monitoring en uploads.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div>
+              <span class="plan-name">Starter</span>
+              <div class="price">€199<small data-i18n="pricing.perMonth">/maand</small></div>
+              <p data-i18n="pricing.starterDescription">Voor een klein team dat één gericht analytics-portaal nodig heeft.</p>
+            </div>
+            <ul>
+              <li><strong>50</strong> <span data-i18n="pricing.totalUsers">gebruikers in totaal</span></li>
+              <li><strong>3</strong> <span data-i18n="pricing.modules">modules</span></li>
+              <li><strong>1</strong> <span data-i18n="pricing.fabricCapacity">Fabric-capaciteit</span></li>
+              <li><strong>3</strong> <span data-i18n="pricing.monitoringWorkspaces">monitoring-workspaces</span></li>
+              <li data-i18n="pricing.noUploads">Geen Excel-uploads</li>
+            </ul>
+            <a class="button button-secondary full-width marketplace-link" href="#" data-marketplace data-i18n="common.marketplaceShort">Bekijk in Marketplace</a>
+          </article>
+
+          <article class="price-card popular reveal">
+            <div class="popular-tag" data-i18n="pricing.recommended">Aanbevolen</div>
+            <div>
+              <span class="plan-name">Basic</span>
+              <div class="price">€399<small data-i18n="pricing.perMonth">/maand</small></div>
+              <p data-i18n="pricing.basicDescription">Voor groeiende teams die meer gebruikers, rapportages en uploads nodig hebben.</p>
+            </div>
+            <ul>
+              <li><strong>200</strong> <span data-i18n="pricing.totalUsers">gebruikers in totaal</span></li>
+              <li><strong>15</strong> <span data-i18n="pricing.modules">modules</span></li>
+              <li><strong>2</strong> <span data-i18n="pricing.fabricCapacities">Fabric-capaciteiten</span></li>
+              <li><strong>10</strong> <span data-i18n="pricing.monitoringWorkspaces">monitoring-workspaces</span></li>
+              <li><strong>5</strong> <span data-i18n="pricing.excelUploads">Excel-uploads</span></li>
+            </ul>
+            <a class="button button-primary full-width marketplace-link" href="#" data-marketplace data-i18n="common.marketplaceShort">Bekijk in Marketplace</a>
+          </article>
+
+          <article class="price-card reveal">
+            <div>
+              <span class="plan-name">Pro</span>
+              <div class="price">€699<small data-i18n="pricing.perMonth">/maand</small></div>
+              <p data-i18n="pricing.proDescription">Voor grotere teams die analytics met meer externe gebruikers delen.</p>
+            </div>
+            <ul>
+              <li><strong>500</strong> <span data-i18n="pricing.totalUsers">gebruikers in totaal</span></li>
+              <li><strong>25</strong> <span data-i18n="pricing.modules">modules</span></li>
+              <li><strong>5</strong> <span data-i18n="pricing.fabricCapacities">Fabric-capaciteiten</span></li>
+              <li><strong>25</strong> <span data-i18n="pricing.monitoringWorkspaces">monitoring-workspaces</span></li>
+              <li><strong>20</strong> <span data-i18n="pricing.excelUploads">Excel-uploads</span></li>
+            </ul>
+            <a class="button button-secondary full-width marketplace-link" href="#" data-marketplace data-i18n="common.marketplaceShort">Bekijk in Marketplace</a>
+          </article>
+
+          <article class="price-card enterprise-card reveal">
+            <div>
+              <span class="plan-name">Enterprise</span>
+              <div class="price enterprise-price" data-i18n="pricing.letsTalk">Neem contact op</div>
+              <p data-i18n="pricing.enterpriseDescription">Voor organisaties die hogere limieten en een grotere inrichting nodig hebben.</p>
+            </div>
+            <ul>
+              <li data-i18n="pricing.enterprise1">Geen standaardlimieten voor het pakket</li>
+              <li data-i18n="pricing.enterprise2">Beheerders voor iedere organisatie</li>
+              <li data-i18n="pricing.enterprise3">Ontworpen voor grote omgevingen</li>
+              <li data-i18n="pricing.enterprise4">Plan de inrichting met ons team</li>
+            </ul>
+            <a class="button button-secondary full-width" href="#demo" data-i18n="pricing.talkToUs">Neem contact op</a>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section marketplace-section">
+      <div class="container">
+        <div class="marketplace-panel reveal">
+          <div>
+            <div class="eyebrow light" data-i18n="marketplace.eyebrow">Azure Marketplace</div>
+            <h2 data-i18n="marketplace.title">Koop en implementeer Consola via Azure Marketplace.</h2>
+            <p data-i18n="marketplace.description">
+              Gebruik het Azure-inkoopproces dat jouw organisatie al gebruikt. Consola wordt maandelijks gefactureerd via Azure.
+            </p>
+          </div>
+
+          <div class="marketplace-benefits">
+            <div><span>01</span><strong data-i18n="marketplace.point1">Implementeer in je Azure-account</strong></div>
+            <div><span>02</span><strong data-i18n="marketplace.point2">Betaal maandelijks via Azure</strong></div>
+            <div><span>03</span><strong data-i18n="marketplace.point3">Koppel Consola aan je Microsoft-omgeving</strong></div>
+          </div>
+
+          <a class="button button-primary button-large marketplace-link" href="#" data-marketplace>
+            <span data-i18n="marketplace.cta">Bekijk in Azure Marketplace</span>
+            <span class="marketplace-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading reveal">
+          <div class="eyebrow" data-i18n="faq.eyebrow">FAQ</div>
+          <h2 data-i18n="faq.title">Veelgestelde vragen</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="reveal">
+            <summary data-i18n="faq.q1">Heeft iedere externe gebruiker een Power BI Pro-licentie nodig?</summary>
+            <p data-i18n="faq.a1">
+              Nee. Met Power BI Embedded kunnen externe gebruikers rapportages bekijken zonder eigen Power BI-licentie. Consola kan ook gebruikers ondersteunen die zich met hun eigen account bij Power BI aanmelden.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary data-i18n="faq.q2">Vervangt Consola Power BI of Microsoft Fabric?</summary>
+            <p data-i18n="faq.a2">Nee. Power BI levert nog steeds de rapportages en Fabric levert nog steeds de gegevenshulpmiddelen. Consola biedt gebruikers één portaal en beheerders één plek om alles te beheren.</p>
+          </details>
+
+          <details class="reveal">
+            <summary data-i18n="faq.q3">Waar wordt Consola geïmplementeerd?</summary>
+            <p data-i18n="faq.a3">Consola wordt via Azure Marketplace in je Azure-omgeving geïmplementeerd.</p>
+          </details>
+
+          <details class="reveal">
+            <summary data-i18n="faq.q4">Kunnen we onze bestaande Power BI-rapportages gebruiken?</summary>
+            <p data-i18n="faq.a4">Ja. Consola maakt verbinding met je Power BI- en Fabric-workspaces. Je kiest welke rapportages in elke module verschijnen.</p>
+          </details>
+
+          <details class="reveal">
+            <summary data-i18n="faq.q5">Kan Consola Row-Level Security afdwingen?</summary>
+            <p data-i18n="faq.a5">Ja. Consola kan de juiste Row-Level Security-gegevens naar Power BI sturen. Een gebruiker kan een rapportage openen, maar ziet alleen de gegevens waarvoor die persoon rechten heeft.</p>
+          </details>
+
+          <details class="reveal">
+            <summary data-i18n="faq.q6">Hoe werken updates?</summary>
+            <p data-i18n="faq.a6">Consulytic kan updates voor Consola via Azure uitvoeren. Tijdens een update kan Consola tijdelijk minder of niet beschikbaar zijn. Updates worden vooraf aangekondigd.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="demo-panel reveal">
+          <div>
+            <div class="eyebrow light" data-i18n="demo.eyebrow">BEKIJK CONSOLA</div>
+            <h2 data-i18n="demo.title">Klaar om Consola in actie te zien?</h2>
+            <p data-i18n="demo.description">
+              Start direct via Azure Marketplace of vraag een demo aan.
+            </p>
+          </div>
+
+          <div class="demo-actions">
+            <a class="button button-primary button-large marketplace-link" href="#" data-marketplace>
+              <span data-i18n="common.marketplaceView">Bekijk in Azure Marketplace</span>
+            </a>
+            <a class="button button-outline-light button-large"
+               href="mailto:sebastiaan@consulytic.com?subject=Demo-aanvraag%20Consola&body=Hallo%20Sebastiaan%2C%0A%0AIk%20wil%20graag%20een%20demo%20van%20Consola%20aanvragen%20en%20meer%20weten%20over%20de%20mogelijkheden%20voor%20onze%20organisatie.%0A%0ABedrijf%3A%0AToepassing%20%2F%20use%20case%3A%0AGeschat%20aantal%20gebruikers%3A%0A%0AAlvast%20bedankt.">
+              <span data-i18n="demo.emailCta">Demo aanvragen</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a class="brand footer-brand" href="#top">
+        <img src="assets/consola-logo.png" alt="Consola">
+      </a>
+      <p data-i18n="footer.text">Consola van Consulytic · Beheer Power BI en Fabric in één centrale omgeving.</p>
+      <a class="back-to-top" href="#top"><span data-i18n="footer.backToTop">Terug naar boven</span> ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
