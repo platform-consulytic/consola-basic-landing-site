@@ -139,7 +139,14 @@ const translations = {
     "demo.title": "Ready to see Consola in action?",
     "demo.description": "Get started directly through Azure Marketplace or request a demo.",
     "demo.emailCta": "Request a demo",
-    "footer.text": "Consola by Consulytic · Manage Power BI and Fabric from one central environment.",
+    "contact.title": "Contact",
+    "contact.company": "Consulytic BV",
+    "contact.addressLine1": "Stationsweg 1",
+    "contact.addressLine2": "3445 AA Woerden",
+    "contact.phone": "T: +31620627128",
+    "contact.email": "E: sebastiaan@consulytic.com",
+    "contact.cta": "Contact us",
+    "footer.text": "Copyright © Consulytic",
     "footer.backToTop": "Back to top"
   },
   nl: {
@@ -282,7 +289,14 @@ const translations = {
     "demo.title": "Klaar om Consola in actie te zien?",
     "demo.description": "Start direct via Azure Marketplace of vraag een demo aan.",
     "demo.emailCta": "Demo aanvragen",
-    "footer.text": "Consola van Consulytic · Beheer Power BI en Fabric in één centrale omgeving.",
+    "contact.title": "Contact",
+    "contact.company": "Consulytic BV",
+    "contact.addressLine1": "Stationsweg 1",
+    "contact.addressLine2": "3445 AA Woerden",
+    "contact.phone": "T: +31620627128",
+    "contact.email": "E: sebastiaan@consulytic.com",
+    "contact.cta": "Neem contact op",
+    "footer.text": "Copyright © Consulytic",
     "footer.backToTop": "Terug naar boven"
   }
 };
