@@ -5,7 +5,7 @@
 - `index.html`
 - `css/styles.css`
 - `js/main.js`
-- `assets/`
+- `assets/` yes
 
 Copy your existing files into `assets/`:
 - `consola-logo.png`
