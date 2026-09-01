@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "meta.title": "Consola | Power BI & Microsoft Fabric Portal on Azure",
+    "meta.title": "Consola",
     "language.label": "Language",
     "common.marketplaceView": "View on Azure Marketplace",
     "common.marketplaceShort": "View on Marketplace",
@@ -143,7 +143,7 @@ const translations = {
     "footer.backToTop": "Back to top"
   },
   nl: {
-    "meta.title": "Consola | Power BI- en Microsoft Fabric-portaal in Azure",
+    "meta.title": "Consola",
     "language.label": "Taal",
     "common.marketplaceView": "Bekijk in Azure Marketplace",
     "common.marketplaceShort": "Bekijk in Marketplace",
